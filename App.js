@@ -48,6 +48,7 @@ const AppContainer = createAppContainer(RootStack);
 export default class App extends React.Component {
   render(){
     return <AppContainer ref={navigatorRef=> {
+      console.disableYellowBox = true;
 NavigationService.setTopLevelNavigator(navigatorRef);
     }}  />;
   }

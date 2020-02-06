@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { View, TouchableOpacity, Text} from 'react-native';
-
+import NavigationService from './NavigationService'
 import {Icon} from 'react-native-elements';
-import NavigationService from "./NavigationService"
+
 
 export class MenuButton extends Component{
   render(){
@@ -18,14 +18,14 @@ export class MenuButton extends Component{
 	
 };
 
-export class AddButton extends Component{
+
+
+export class ScannerButton extends Component{
   render(){
     return(
       <View>
 		<TouchableOpacity onPress={() => {} }>
-			<Text style={{color: 'white',padding: 5, marginRight:10, fontSize: 30}}>
-        +
-      </Text>
+        <Icon name = 'center-focus-weak' color = 'white' size = {30} containerStyle ={{padding: 5, marginRight:10}}/>
 		</TouchableOpacity>
 	</View>  
     )
